@@ -1,0 +1,26 @@
+{
+  "redis_host": "redis",
+  "redis_port": 6379,
+  "redis_auth": null,
+  "http_host": "0.0.0.0",
+  "http_port": 7379,
+  "threads": 2,
+  "pool_size": 10,
+  "daemonize": false,
+  "websockets": false,
+  "database": 0,
+  "http_max_request_size": 134217728,
+  "acl": [
+    {
+      "disabled": ["*"]
+    },
+    {
+      "enabled": ["PING", "MGET", "MSET", "PUBLISH", "SUBSCRIBE", "DEL"]
+    }
+  ],
+  "hiredis": {
+    "keep_alive_sec": 15
+  },
+  "verbosity": 3,
+  "logfile": "/dev/stderr"
+}

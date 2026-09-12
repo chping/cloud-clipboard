@@ -852,8 +852,8 @@
         const storage = localStorage.getItem('redis');
         if (storage === null) {
           redis = {
-            host: 'https://public-webdis.onrender.com/',
-            prefix: 'public-dont-input-sensitive-info',
+            host: '/webdis/',
+            prefix: 'cloud-clipboard',
           };
           log('Redis info not found in local storage');
         } else {
